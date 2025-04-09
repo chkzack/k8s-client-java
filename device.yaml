@@ -1,0 +1,56 @@
+apiVersion: devices.kubeedge.io/v1beta1
+kind: Device
+metadata:
+  name: device-3.3
+  namespace: default
+spec:
+  deviceModelRef:
+    name: device
+  nodeName: industio-desktop
+  properties: []
+  protocol:
+    protocolName: virtualProtocol
+status:
+  twins:
+  - propertyName: status
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: OFFLINE
+  - propertyName: slna
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: "1.1"
+  - propertyName: parentslna
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: ""
+  - propertyName: temperature
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: "20"
+  - propertyName: humidity
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: "30"
+  - propertyName: latitude
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: "0"
+  - propertyName: longitude
+    reported:
+      metadata:
+        timestamp: "1550049403598"
+        type: string
+      value: "0"
